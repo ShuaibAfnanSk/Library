@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/products.css">
+    <script src="https://kit.fontawesome.com/0cdc049c53.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="loader">
+        <div class="loader">
+            <div class="loader-small"></div>
+            <div class="loader-large"></div>
+        </div>
+    </div>
+    <div class="container">
+        <header>
+            <h1>Bookstore</h1>
+            <div class="functionalItems">
+                <div class="search">
+                    <input type="text" id="searchInput" placeholder="Search" />
+                </div>
+                <div class="shopping">
+                    <img src="images\shopping-cart-simple.svg" alt="">
+                    <span class="quantity">0</span>
+                </div>
+            </div>
+        </header>
+        <div class="buttons">
+            <button onclick="sortByName(true)">Sort by Name <i class="fa-solid fa-arrow-down"></i></button>
+            <button onclick="sortByName(false)">Sort by Name <i class="fa-solid fa-arrow-up"></i></button>
+            <button onclick="sortByPrice(true)">Sort by Price <i class="fa-solid fa-arrow-down"></i></button>
+            <button onclick="sortByPrice(false)">Sort by Price <i class="fa-solid fa-arrow-up"></i></button>
+        </div>
+        <div class="list"></div>
+    </div>
+    <div class="card">
+        <div class="cartHead">
+            <h1>Cart</h1>
+            <div class="closeShopping">Close</div>
+        </div>
+        
+        <div class="checkout">
+            <div class="total">0</div>
+        </div>
+        <ul class="listCard">
+
+        </ul>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
