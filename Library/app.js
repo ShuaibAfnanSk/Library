@@ -24,3 +24,7 @@ app.get('/products', (request, respone) => {
     respone.sendFile('products.html', { root : './templates/' });
 });
 
+app.get('/checkout', (request, respone) => {
+    respone.sendFile('checkout.html', { root : './templates/' });
+});
+

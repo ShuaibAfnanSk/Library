@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
 #loader {
     position: fixed;
     display: flex;
@@ -5,8 +7,10 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: rgba(255, 255, 255); /* Semi-transparent background */
-    z-index: 9999; /* Ensure the loader appears on top of other elements */
+    background-color: rgba(255, 255, 255);
+    /* Semi-transparent background */
+    z-index: 9999;
+    /* Ensure the loader appears on top of other elements */
 }
 
 .loader {
@@ -50,4 +54,122 @@
     100% {
         transform: rotateX(180deg);
     }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 1em;
+    width: 100%;
+    height: 100vh;
+    background: #efefef;
+}
+
+.container {
+    border-radius: 1em;
+    padding: .5em;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    gap: 2em;
+    height: 100%;
+}
+
+.hero img {
+    flex-basis: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1em;
+}
+
+.content {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0em 1em;
+}
+
+.navPart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navPart h2 {
+    font-family: 'Carter One', cursive;
+}
+
+.Btn {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 1.10em;
+    justify-content: center;
+    background-color: rgb(15, 15, 15);
+    border: none;
+    color: white;
+    font-weight: 600;
+    gap: 8px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    font-family: 'PT Mono', monospace;
+}
+
+.svgIcon {
+    width: 16px;
+}
+
+.svgIcon path {
+    fill: white;
+}
+
+.Btn::before {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    content: "";
+    background-color: #efefef;
+    border-radius: 50%;
+    left: -100%;
+    top: 0;
+    transition-duration: .3s;
+    mix-blend-mode: difference;
+}
+
+.Btn:hover::before {
+    transition-duration: .3s;
+    transform: translate(100%, -50%);
+    border-radius: 0;
+}
+
+.Btn:active {
+    transform: translate(5px, 5px);
+    transition-duration: .3s;
+}
+
+.contentPart div h4 {
+    font-family: 'Carter One', cursive;
+    font-size: 4.5em;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+.contentPart div p {
+    font-size: 1.25em;
+    margin-bottom: 1em;
+    font-family: 'PT Mono', monospace;
 }
